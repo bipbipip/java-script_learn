@@ -18,9 +18,10 @@ let userName = '42';
 let ToString = String(count);
 let ToNumber = Number(userName);
 let ToString2 = toString(count);
+let ToString3 = "" + count;
 let ToNumber2= parseInt(userName);
 console.log("Task 3 result:",typeof ToString, typeof ToNumber);
-console.log("Task 3 result 2:",typeof ToString2, typeof ToNumber2);
+console.log("Task 3 result 2:",typeof ToString2, typeof ToNumber2, typeof ToString3);
 
 // Task 4
 let a =1;
