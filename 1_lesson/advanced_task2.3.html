@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let balance = parseFloat(prompt("Введите ваш баланс"));
+
+    buy();
+    function buy() {
+        while (balance > 0) {
+            let phone_price = parseFloat((Math.random() * 100).toFixed(2));
+            let accessories = parseFloat((Math.random() * 10).toFixed(2));
+            let tax = parseFloat(((phone_price + accessories) * 0.05).toFixed(2));
+
+            let cart = phone_price + accessories + tax;
+
+
+            alert("Стоимость телефона: " + phone_price.toFixed(2) + "$");
+            alert("Стоимость аксессуара: " + accessories.toFixed(2) + "$");
+            alert("Налоговая ставка: 5%");
+
+            if (balance < cart) {
+                alert("У вас не хватает денег на балансе");
+                break;
+            } else {
+                balance = parseFloat((balance - cart).toFixed(2));
+                alert("Покупка совершена. Остаток: " + balance.toFixed(2) + "$");
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a= prompt("firt number");
+  let b= prompt("second number");
+
+  function getSum(a, b){
+    let result = 0;
+    if (a == b) {
+      alert("Same number");
+    }
+    else {
+      for (a; a <= b; a++) {
+        result += Number(a);
+      }
+      alert(result);
+    }
+  }
+  getSum(a, b)
+</script>
+</body>
+</html>

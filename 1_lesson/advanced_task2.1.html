@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = prompt("first side");
+  let b = prompt("second side");
+  let c = prompt("third side");
+  isTriagle(a, b, c);
+  function isTriagle(a, b, c) {
+    if (!(Number(a) + Number(b) > Number(c))){
+      alert("false");
+      return false;
+    }
+    if (!(Number(a) + Number(c) > Number(b))){
+      alert("false");
+      return false;
+    }
+    if (!(Number(b) + Number(c) > Number(a))){
+      alert("false");
+      return false;
+    }
+    alert ("true");
+    return true;
+
+
+    //
+    // if (Number(a) + Number(b) > Number(c)) {
+    //   if (Number(a) + Number(c) > Number(b)) {
+    //     if (Number(b) + Number(c) > Number(a)) {
+    //       alert('true');
+    //       return true;
+    //
+    //     }
+    //   }
+    // }
+    // else {
+    //   alert ('false');
+    //   return false;
+    // }
+    //
+  }
+
+</script>
+</body>
+</html>
