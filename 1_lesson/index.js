@@ -94,5 +94,8 @@ else {
 }
 // task 5
 
+const bin =[1,2,3,4,5,6,7,8,9,10];
+const asd = bin.map(i => i*i);
+console.log(asd);
 
 
