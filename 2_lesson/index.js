@@ -5,22 +5,22 @@ let people =[
     {name: 'Vova', bill: 300}
 ];
 // метод map
-const multisalary = people.map(item=>item.bill*3);
-console.log(multisalary);
-const uptoten = people.map(item=>item.bill*1.1);
-console.log(uptoten);
-const lowsalary = people.map(item=> item.bill/3);
-console.log(lowsalary);
+const multiSalary = people.map(item=>item.bill*3);
+console.log(multiSalary);
+const upToTen = people.map(item=>item.bill*1.1);
+console.log(upToTen);
+const lowSalary = people.map(item=> item.bill/3);
+console.log(lowSalary);
 // метод reduce
-const sumsalary = people.reduce((sum, current) => sum += current.bill,0);
-console.log(sumsalary);
+const sumSalary = people.reduce((sum, current) => sum += current.bill,0);
+console.log(sumSalary);
 // метод filter
-const filteredsalary = people.filter(item => item.bill<500);
-console.log(filteredsalary);
-const filteredname = people.filter(item => item.name === "Vadim");
-console.log(filteredname);
-const filteredsalaryup =people.filter(item => item.bill >3000);
-console.log(filteredsalaryup);
+const filteredSalary = people.filter(item => item.bill<500);
+console.log(filteredSalary);
+const filteredName = people.filter(item => item.name === "Vadim");
+console.log(filteredName);
+const filteredSalaryUp =people.filter(item => item.bill >3000);
+console.log(filteredSalaryUp);
 // метод concat
 let people2 =[
     {name: 'Alex', bill: 3000},
@@ -31,17 +31,17 @@ let people2 =[
 const union = people.concat(people2);
 console.log(union);
 //метод find
-const findname = people.find(item=>item.name === "Alex");
-console.log(findname);
-const findsalary = people.find(item=>item.bill == 1000);
-console.log(findsalary);
-const findname2 = people.find(item=>item.name === "Vadim");
-console.log(findname2);
+const findName = people.find(item=>item.name === "Alex");
+console.log(findName);
+const findSalary = people.find(item=>item.bill == 1000);
+console.log(findSalary);
+const findName2 = people.find(item=>item.name === "Vadim");
+console.log(findName2);
 // метод findIndex
-const findindexsalary = people.findIndex(item => item.bill == 300);
+const findIndexSalary = people.findIndex(item => item.bill == 300);
 console.log(people[findindexsalary]);
-const findindexname = people.findIndex(item=>item.name === "Yura");
-console.log(people[findindexname]);
+const findIndexName = people.findIndex(item=>item.name === "Yura");
+console.log(people[findIndexName]);
 // метод Push
 const user = {name:'Ilya', bill: 2500};
 const user2 = {name:'Vlad', bill: 1300};
